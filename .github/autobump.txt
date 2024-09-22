@@ -190,7 +190,9 @@ bazel-remote
 bazelisk
 bbot
 bbtools
+bc-gh
 bcoin
+bcpp
 bde
 bdw-gc
 beagle
@@ -403,6 +405,7 @@ circleci
 circumflex
 citus
 cjson
+clac
 clair
 clamav
 clang-format
@@ -591,6 +594,7 @@ deno
 dep-tree
 dependency-check
 deployer
+der-ascii
 derby
 descope
 detect-secrets
@@ -713,6 +717,7 @@ dynein
 dysk
 dzr
 e2fsprogs
+e2tools
 earthly
 easeprobe
 easy-rsa
@@ -764,6 +769,7 @@ epic5
 epoll-shim
 epr
 eprover
+eralchemy
 erdtree
 erg
 erlang
@@ -801,6 +807,7 @@ fakeroot
 falco
 falcoctl
 fantom
+fanyi
 fast_float
 fastapi
 fastfec
@@ -832,6 +839,7 @@ ffmpeg
 ffmpeg@4
 ffmpeg@5
 ffmpeg@6
+ffmpegthumbnailer
 ffms2
 ffsend
 ffuf
@@ -931,6 +939,7 @@ gateway-go
 gator
 gatsby-cli
 gau
+gawk
 gcalcli
 gcem
 gcovr
@@ -1260,8 +1269,10 @@ iputils
 ipv6calc
 ipython
 ircd-hybrid
+ircii
 iredis
 isl
+iso-codes
 ispc
 istioctl
 isync
@@ -1342,6 +1353,7 @@ karmadactl
 kaskade
 katana
 kcat
+kcgi
 kcov
 kcptun
 kea
@@ -1377,6 +1389,7 @@ krew
 ksh93
 ksops
 ktfmt
+ktor
 kube-linter
 kube-ps1
 kubeaudit
@@ -1452,6 +1465,7 @@ lgogdownloader
 libabigail
 libadwaita
 libaec
+libarchive
 libass
 libassuan
 libavif
@@ -1539,6 +1553,7 @@ libpq
 libpqxx
 libproxy
 libpulsar
+libraw
 librdkafka
 libre
 librealsense
@@ -1598,6 +1613,7 @@ libxo
 libxslt
 libxvmc
 libzim
+libzip
 libzzip
 license-eye
 licensed
@@ -1827,6 +1843,7 @@ nagios
 nagios-plugins
 nano
 nanoflann
+nanopb
 nasm
 nats-server
 nats-streaming-server
@@ -1974,6 +1991,7 @@ openh264
 openimageio
 openiothub-server
 openj9
+openjazz
 openjdk
 openjdk@11
 openjdk@17
@@ -2037,11 +2055,13 @@ pagmo
 pan
 pandoc
 pandoc-crossref
+pandoc-plot
 pandocomatic
 pango
 pangomm
 papilo
 parallel
+parallel-hashmap
 pari
 parliament
 parquet-cli
@@ -2072,6 +2092,7 @@ pegtl
 percona-xtrabackup
 perl
 perltidy
+peru
 pfetch-rs
 pg_cron
 pg_partman
@@ -2192,6 +2213,7 @@ pueue
 pug
 pulsarctl
 pure
+pure-ftpd
 purescript
 purescript-language-server
 pushpin
@@ -2648,6 +2670,7 @@ temporal
 tendermint
 tengo
 tenv
+tere
 terminator
 termshark
 terracognita
@@ -2855,6 +2878,7 @@ vue-cli
 vulkan-extensionlayer
 vulkan-volk
 vultr
+vulture
 vunnel
 vvdec
 vvenc

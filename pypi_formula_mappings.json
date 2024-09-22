@@ -282,6 +282,9 @@
   "enex2notion": {
     "exclude_packages": ["certifi", "pymupdf"]
   },
+  "eralchemy": {
+    "package_name": "eralchemy[pygraphviz]"
+  },
   "esphome": {
     "exclude_packages": ["certifi", "cryptography"]
   },
@@ -550,10 +553,10 @@
   },
   "openstackclient": {
     "extra_packages": [
-      "python-barbicanclient", "python-cloudkittyclient", "python-designateclient",
-      "python-glanceclient", "python-heatclient", "python-ironicclient",
-      "python-magnumclient", "python-manilaclient", "python-mistralclient",
-      "python-octaviaclient", "setuptools"
+      "osc-placement", "python-barbicanclient", "python-cloudkittyclient",
+      "python-designateclient", "python-glanceclient", "python-heatclient",
+      "python-ironicclient", "python-magnumclient", "python-manilaclient",
+      "python-mistralclient", "python-octaviaclient", "setuptools"
     ],
     "exclude_packages": ["certifi", "cryptography"]
   },

@@ -3,23 +3,23 @@ class Awscli < Formula
 
   desc "Official Amazon AWS command-line interface"
   homepage "https://aws.amazon.com/cli/"
-  url "https://github.com/aws/aws-cli/archive/refs/tags/2.17.51.tar.gz"
-  sha256 "bf24a08ad58df75de884a3195b5f823d73ae6a5f310f0f7f495018f5e7e9bb8e"
+  url "https://github.com/aws/aws-cli/archive/refs/tags/2.17.56.tar.gz"
+  sha256 "6e5fdc5fe6769b3919bf533324fbba3b935efa7268599aec1a54be7ba83da65c"
   license "Apache-2.0"
   head "https://github.com/aws/aws-cli.git", branch: "v2"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "052a06dba97e8097ee3d07c0c1b1c644aefb1c3ccb02e547333bc62c94cee797"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "0198246ecee71a65723a24653cb061d212c3580aa33ad9c891509b0be86a99be"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "641987fbcda14af12101716ed472c19cfb689491187d9a068afcb32d0681e0b4"
-    sha256 cellar: :any_skip_relocation, sonoma:        "d9bafc0d07fee1f694244b1255d7950b3221f3144d738730ec6820d45963cdf2"
-    sha256 cellar: :any_skip_relocation, ventura:       "cb253527bb75d14f2364246d1a876957738cb554ab0f1e3b47d7bb0a42f3a821"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "acf6fd92d05717fd5bc12feb24e3b7e5a1826be60dbef4962338c55c4b89fdd1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5e0ee72568ab405330da9e374d3e9bae211395d09eea993e9a559097e7055460"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "8ce39aeb1e2fdd524816204289c7480be06cbfe81de7f51acfe79df1b6d7167b"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "6160fd87c0cd5aa2de59de991dac9738b67981bcba5a20f465f7126c377470a9"
+    sha256 cellar: :any_skip_relocation, sonoma:        "5a44ec4c3cb008c2e2de2e8e85a31f302ee971a5ba85c1331c01ab1b689ab6ed"
+    sha256 cellar: :any_skip_relocation, ventura:       "12b897253fe66b2a078d7b214d2dff00ab8ad0c108400fb813807ca820b7d83e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a9a748ab96e9a7006536d5bc5b112eefd56ac6b7adfdafb26c276057ad0e5d13"
   end
 
   depends_on "cmake" => :build
   depends_on "cryptography"
-  depends_on "python@3.11" # Python 3.12 issue: https://github.com/aws/aws-cli/issues/8342
+  depends_on "python@3.12"
 
   uses_from_macos "libffi"
   uses_from_macos "mandoc"
@@ -60,8 +60,8 @@ class Awscli < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz"
-    sha256 "0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"
+    url "https://files.pythonhosted.org/packages/d9/77/bd458a2e387e98f71de86dcc2ca2cab64489736004c80bc12b70da8b5488/python-dateutil-2.9.0.tar.gz"
+    sha256 "78e73e19c63f5b20ffa567001531680d939dc042bf7850431877645523c66709"
   end
 
   resource "ruamel-yaml" do
@@ -70,13 +70,13 @@ class Awscli < Formula
   end
 
   resource "ruamel-yaml-clib" do
-    url "https://files.pythonhosted.org/packages/d5/31/a3e6411947eb7a4f1c669f887e9e47d61a68f9d117f10c3c620296694a0b/ruamel.yaml.clib-0.2.7.tar.gz"
-    sha256 "1f08fd5a2bea9c4180db71678e850b995d2a5f4537be0e94557668cf0f5f9497"
+    url "https://files.pythonhosted.org/packages/46/ab/bab9eb1566cd16f060b54055dd39cf6a34bfa0240c53a7218c43e974295b/ruamel.yaml.clib-0.2.8.tar.gz"
+    sha256 "beb2e0404003de9a4cab9753a8805a8fe9320ee6673136ed7f04255fe60bb512"
   end
 
   resource "setuptools" do
-    url "https://files.pythonhosted.org/packages/27/cb/e754933c1ca726b0d99980612dc9da2886e76c83968c246cfb50f491a96b/setuptools-74.1.1.tar.gz"
-    sha256 "2353af060c06388be1cecbf5953dcdb1f38362f87a2356c480b6b4d5fcfc8847"
+    url "https://files.pythonhosted.org/packages/27/b8/f21073fde99492b33ca357876430822e4800cdf522011f18041351dfa74b/setuptools-75.1.0.tar.gz"
+    sha256 "d59a21b17a275fb872a9c3dae73963160ae079f1049ed956880cd7c09b120538"
   end
 
   resource "six" do
@@ -85,8 +85,8 @@ class Awscli < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/c8/93/65e479b023bbc46dab3e092bda6b0005424ea3217d711964ccdede3f9b1b/urllib3-1.26.19.tar.gz"
-    sha256 "3e3d753a8618b86d7de333b4223005f68720bcd6a7d2bcb9fbd2229ec7c1e429"
+    url "https://files.pythonhosted.org/packages/e4/e8/6ff5e6bc22095cfc59b6ea711b687e2b7ed4bdb373f7eeec370a97d7392f/urllib3-1.26.20.tar.gz"
+    sha256 "40c2dc0c681e47eb8f90e7e27bf6ff7df2e677421fd46756da1161c39ca70d32"
   end
 
   resource "wcwidth" do
@@ -100,7 +100,7 @@ class Awscli < Formula
   end
 
   def python3
-    which("python3.11")
+    which("python3.12")
   end
 
   def install

@@ -335,7 +335,6 @@ jobs:
                 aom|\
                 brotli|\
                 cups|\
-                dart-sdk|\
                 dbus|\
                 freetype|\
                 gdbm|\
@@ -354,13 +353,11 @@ jobs:
                 libnghttp2|\
                 libsndfile|\
                 libssh2|\
-                libtiff|\
                 libva|\
                 libx11|\
                 libxcrypt|\
                 libxml2|\
                 libxrandr|\
-                llvm|\
                 mesa|\
                 minizip|\
                 mpfr|\
