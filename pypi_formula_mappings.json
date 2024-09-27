@@ -672,10 +672,12 @@
   "python-matplotlib": {
     "exclude_packages": ["numpy", "pillow"]
   },
-  "python-requests": {
-    "exclude_packages": ["certifi", "charset-normalizer", "idna", "urllib3"]
-  },
   "pythran": {
+    "exclude_packages": ["numpy"]
+  },
+  "pytorch": {
+    "package_name": "torch[opt-einsum]",
+    "extra_packages": ["pyyaml"],
     "exclude_packages": ["numpy"]
   },
   "raven": {

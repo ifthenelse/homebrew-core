@@ -325,62 +325,19 @@ jobs:
               keep_if_no_match: true
 
             - label: CI-linux-self-hosted
-              path: Formula/.+/(dart-sdk|envoy|qt(@5)?|souffle|texlive).rb
+              path: Formula/.+/(dart-sdk|envoy|qt(@5)?|texlive).rb
               keep_if_no_match: true
               allow_any_match: true
 
             - label: CI-linux-self-hosted-deps
               path: "Formula/.+/(\
                 alsa-lib|\
-                aom|\
-                brotli|\
-                cups|\
-                dbus|\
-                freetype|\
-                gdbm|\
                 glib|\
-                glslang|\
-                gmp|\
-                gtk4|\
-                gzip|\
-                harfbuzz|\
-                hdf5|\
-                icu4c|\
-                json-c|\
-                krb5|\
-                libarchive|\
-                libedit|\
-                libnghttp2|\
-                libsndfile|\
-                libssh2|\
                 libva|\
-                libx11|\
-                libxcrypt|\
                 libxml2|\
-                libxrandr|\
-                mesa|\
-                minizip|\
-                mpfr|\
-                nss|\
-                numpy|\
-                open-mpi|\
-                openexr|\
-                p11-kit|\
                 python@3.12|\
-                qt(@5)?|\
-                readline|\
-                remind|\
-                shared-mime-info|\
-                souffle|\
                 systemd|\
-                texlive|\
-                unbound|\
-                utf8cpp|\
-                util-linux|\
-                webp|\
-                xz|\
                 zlib|\
-                zstd\
                 ).rb"
               keep_if_no_match: true
               allow_any_match: true

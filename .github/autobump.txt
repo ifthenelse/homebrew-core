@@ -584,6 +584,7 @@ dcm2niix
 ddcutil
 ddns-go
 ddrescue
+deadfinder
 deark
 debianutils
 define
@@ -1093,6 +1094,7 @@ govc
 govulncheck
 gowsdl
 gpac
+gperftools
 gpg-tui
 gprof2dot
 gpsim
@@ -1311,6 +1313,7 @@ joker
 jolie
 joplin-cli
 jose
+jp2a
 jpeg-turbo
 jpeg-xl
 jql
@@ -1324,6 +1327,7 @@ json-fortran
 json-glib
 json2ts
 json2tsv
+jsoncpp
 jsonnet
 jsonnet-bundler
 jsonrpc-glib
@@ -1347,6 +1351,7 @@ kahip
 kakoune
 kalker
 kallisto
+kamal-proxy
 kamel
 kapacitor
 karmadactl
@@ -1390,6 +1395,7 @@ ksh93
 ksops
 ktfmt
 ktor
+kty
 kube-linter
 kube-ps1
 kubeaudit
@@ -1529,10 +1535,10 @@ libmaxminddb
 libmicrohttpd
 libmobi
 libmxml
+libnetfilter_conntrack
 libnfs
 libnftnl
 libnghttp3
-libnice
 libntlm
 libobjc2
 libomp
@@ -1553,6 +1559,7 @@ libpq
 libpqxx
 libproxy
 libpulsar
+libraqm
 libraw
 librdkafka
 libre
@@ -1581,6 +1588,7 @@ libtensorflow
 libtiff
 libtirpc
 libtommath
+libtool
 libtrace
 libtrng
 libucl
@@ -1592,6 +1600,7 @@ liburing
 libusbmuxd
 libuv
 libva
+libvatek
 libvirt
 libvirt-python
 libwbxml
@@ -1825,6 +1834,7 @@ mubeng
 muffet
 mujs
 multitail
+muon
 murex
 musikcube
 mutt
@@ -1850,6 +1860,7 @@ nats-streaming-server
 navi
 navidrome
 nbdime
+ncc
 ncdc
 ncnn
 nco
@@ -2367,7 +2378,6 @@ rust
 rust-analyzer
 rust-parallel
 rustcat
-rustfmt
 rustls-ffi
 rustscan
 rustup
@@ -2517,6 +2527,7 @@ solana
 solhint
 sollya
 solr
+solr@8.11
 sonar-scanner
 sonarqube
 sonarqube-lts
@@ -2662,6 +2673,7 @@ teip
 tektoncd-cli
 teku
 telegraf
+teleport
 teller
 telnet
 telnetd
@@ -2687,6 +2699,7 @@ terramate
 terrascan
 tesseract
 testkube
+testscript
 testssl
 tetra
 texinfo
@@ -2794,6 +2807,7 @@ uni
 uni-algo
 uni2ascii
 unibilium
+unicorn
 unison
 unisonlang
 universal-ctags
@@ -2891,6 +2905,7 @@ wartremover
 wasm-micro-runtime
 wasm-pack
 wasm-tools
+wasmedge
 wasmer
 wasmtime
 watchexec
@@ -2930,6 +2945,7 @@ wstunnel
 wtfis
 wumpus
 wxmaxima
+wxpython
 wxwidgets
 x265
 x3270

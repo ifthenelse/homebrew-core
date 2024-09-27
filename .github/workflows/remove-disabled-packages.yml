@@ -86,17 +86,18 @@ jobs:
 
   create-issue:
     permissions:
-      issues: write # for `gh issue create`
+      issues: write # for Homebrew/actions/create-or-update-issue
     needs: remove-disabled-packages
-    if: failure()
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Create issue on failure
-        env:
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        run: |
-          gh issue create \
-            --title 'Disabled package removal failed' \
-            --body "Run failed at $RUN_URL" \
-            --label 'bug,help wanted' \
-            --repo "$GITHUB_REPOSITORY"
+        uses: Homebrew/actions/create-or-update-issue@master
+        with:
+          title: Disabled package removal failed
+          body: Run failed at ${{ env.RUN_URL }}
+          labels: bug,help wanted
+          update-existing: ${{ needs.remove-disabled-packages.result == 'failure' }}
+          close-existing: ${{ needs.remove-disabled-packages.result == 'success' }}
+          close-from-author: github-actions[bot]
+          close-comment: Run succeeded at ${{ env.RUN_URL }}, closing issue.
